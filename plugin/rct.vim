@@ -19,7 +19,7 @@ function! ProcessText()
     endif
     let s:rct_last_yank = yanked_text
     " echo 'text: ' . yanked_text
-    let cmd = 'rct ' . escape(yanked_text, '"')
+    let cmd = 'rct "' . escape(yanked_text, '"') . '"'
     let result = system(cmd)
     echo result
 endfunction
