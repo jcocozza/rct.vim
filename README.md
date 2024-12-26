@@ -19,4 +19,19 @@ The idea is to reproduce the behavior of `:"+y` or `:"*y` except from remote to 
 By default, yanks to the `q` register will be sent to local if things are set up properly.
 
 ## Installation
-`rct.vim` requires `rct` to be set up and installed.
+
+`rct.vim` requires `rct` to be [set up](https://github.com/jcocozza/rct?tab=readme-ov-file#setup) and installed.
+
+## Basic Use
+
+0. rct is insalled and configured on local and remote
+
+1. On local machine
+
+```bash
+rct listen -d # run the rct listener in the background
+```
+
+2. By default any text yanked to `q` register will be sent to local by rct. Highlight text in vim, then `:"qy`.
+
+3. Can now paste locally from the yanked text in vim
