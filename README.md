@@ -12,7 +12,7 @@ This becomes problematic when working with vim on a remote machine.
 Yanking into the system clipboard doesn't do anything useful because your local machine does not have access the remote's clipboard.
 There are (of course) workarounds like X11 forwarding or tmux, but I've found that these are often frustrating to work with (for this purpose) and can be finicky.
 Moreover, this assumes that you have a version of vim that has the +clipboard option.
-Especially in restricted environments, this might now be feasible.
+Especially in restricted environments, this might not be feasible.
 
 My solution was to develop a basic cross platform cli, [rct](https://github.com/jcocozza/rct), that sends text between machines.
 This plugin is a wrapper around it.
