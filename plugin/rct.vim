@@ -1,6 +1,6 @@
 " rct.vim - easily copy text from remote vim to local clipboard
 
-let g:rct_register = 'q'
+let g:rct_register = get(g:, 'rct_register', 'q')
 let s:rct_last_yank = ''
 
 function! CheckRCT()
