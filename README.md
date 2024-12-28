@@ -19,6 +19,7 @@ This plugin is a wrapper around it.
 
 The idea is to reproduce the behavior of `:"+y` or `:"*y` except from remote to local.
 By default, yanks to the `q` register will be sent to local if things are set up properly.
+If you want to use a different register, simply change it in your `.vimrc` with the global variable: `g:rct_register`.
 
 ## Installation
 
@@ -26,7 +27,7 @@ By default, yanks to the `q` register will be sent to local if things are set up
 
 ## Basic Use
 
-0. rct is insalled and configured on local and remote
+0. [rct](https://github.com/jcocozza/rct) is installed and configured on local and remote
 
 1. On local machine
 
