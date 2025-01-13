@@ -19,7 +19,9 @@ function! s:ProcessText()
         return
     endif
     let s:rct_last_yank = yanked_text
-    let cmd = g:rct_command . ' "' . escape(yanked_text, '"') . '"'
+    " include the -- so that input can be copied that looks like flags, but
+    " isn't (e.g. if i tried to copy "--hello world")
+    let cmd = g:rct_command . ' -- "' . escape(yanked_text, '"') . '"'
     let result = system(cmd)
     if v:shell_error != 0
         echoerr "rct command failed: " . result
