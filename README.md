@@ -1,5 +1,7 @@
 # rct.vim
 
+Archived because I discovered OSC52.
+
 The vim plugin that wraps the [rct](https://github.com/jcocozza/rct) tool.
 
 ## Rationale
